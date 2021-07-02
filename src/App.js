@@ -48,7 +48,7 @@ function TodoListItem(props) {
 
 function TodoList(props) {
   let selectedTodos = [];
-  if (props.title === "To-do") {
+  if (props.title === "Todo") {
     selectedTodos = props.todos.filter((todo) => !todo.isCompleted);
   } else {
     selectedTodos = props.todos.filter((todo) => todo.isCompleted);
@@ -56,14 +56,17 @@ function TodoList(props) {
   return (
     <div className="todo-list">
       <h2>{props.title}:</h2>
-      {selectedTodos.map((selectedTodo) => (
-        <TodoListItem
-          deleteTodo={props.deleteTodo}
-          toggleTodo={props.toggleTodo}
-          selectedTodo={selectedTodo}
-          key={uuidv4()}
-        />
-      ))}
+      {
+        // show todo list items here
+        selectedTodos.map((selectedTodo) => (
+          <TodoListItem
+            deleteTodo={props.deleteTodo}
+            toggleTodo={props.toggleTodo}
+            selectedTodo={selectedTodo}
+            key={uuidv4()}
+          />
+        ))
+      }
     </div>
   );
 }
@@ -125,7 +128,6 @@ class App extends React.Component {
 
   deleteTodo(id, event) {
     event.stopPropagation();
-
     let todos = this.state.todos;
     let i = 0;
     let deletedTodo = [];
@@ -163,7 +165,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="content">
-        <h1 className="title">To-Do App</h1>
+        <h1 className="title">To-do App</h1>
         <TodoForm createTodo={this.createTodo.bind(this)} />
         <div className="lists-wrapper">
           <TodoList

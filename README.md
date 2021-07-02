@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# To-Do List Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This ReactJS application is a simple to-do list that can keep a track of your tasks and you can toggle them between To-Do 🔲 and Complete ✅ statuses.
 
-## Available Scripts
+The application does not uses any
 
-In the project directory, you can run:
+## Prerequisites
 
-### `yarn start`
+### Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Fork this repository
+2. Clone the repository
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Installing Node.js
 
-### `yarn test`
+You need a package manager `npm` to install libraries and run the React application. You can download it by installing [Node.js][nodejs] on your machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installing the package
 
-### `yarn build`
+I have used a just one Javascript package - _**uuidv4**_ in this application to make my work smoother and easier.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The package and its version is present in the file package.json in the root folder
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To automatically install the package, run the following command at the root location in your terminal -
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```terminal
+npm install
+```
 
-### `yarn eject`
+Or, you can do it manually by
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm install uuidv4
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Execute
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To run the React application on your machine, follow these steps -
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Open Terminal/Command Prompt.
+2. Navigate to the directory where your project is stored.
+3. Run the following command
 
-## Learn More
+```terminal
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Changes and Modifications
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Base Data
 
-### Code Splitting
+There is some base data in the application which can be modified. Navigate to the file **App.js**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+/src
+  /App.js
+```
 
-### Analyzing the Bundle Size
+At line 75, you will find the _todos_ state where the base daata is stored. Feel free to modify it without changing the structure of the state.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Useful Links
 
-### Making a Progressive Web App
+You can study more about uuidv4 [here][uuidv4].
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+Feel free to customize this application and adjust it to your needs. 🙌
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+For collaborations, contact me [here][email].
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[nodejs]: https://nodejs.org/en/
+[uuidv4]: https://www.npmjs.com/package/uuidv4
+[email]: mailto:karan.010896@gmail.com
